@@ -72,6 +72,15 @@ class SiteSectionSeeder extends Seeder
                 'subtitle' => 'Connectons-nous et construisons ensemble quelque chose d\'extraordinaire',
                 'title_translatable'    => ['en' => 'Contact'],
                 'subtitle_translatable' => ['en' => 'Let\'s connect and build something extraordinary together'],
+                'order'    => 9,
+            ],
+
+            [
+                'key'      => 'certifications',
+                'title'    => 'Certifications',
+                'subtitle' => 'Mes certifications professionnelles et compétences validées',
+                'title_translatable'    => ['en' => 'Certifications'],
+                'subtitle_translatable' => ['en' => 'My professional certifications and validated skills'],
                 'order'    => 8,
             ],
         ];

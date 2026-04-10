@@ -15,6 +15,7 @@ use App\Http\Controllers\Api\V1\TrackingController;
 use App\Http\Controllers\Api\V1\ReferenceController;
 use App\Http\Controllers\Api\V1\SiteSectionController;
 use App\Http\Controllers\Api\V1\TranslationController;
+use App\Http\Controllers\Api\V1\CertificationController;
 
 
 use Illuminate\Support\Facades\Route;
@@ -94,4 +95,7 @@ Route::prefix('v1')->middleware('force.json')->group(function () {
         // --- Traductions (clé/valeur pour i18n frontend) ---
     Route::get('translations', [TranslationController::class, 'index'])
     ->name('api.v1.translations.index');
+    // --- Certifications ---
+    Route::get('certifications', [CertificationController::class, 'index'])
+    ->name('api.v1.certifications.index');
 });

@@ -40,6 +40,7 @@ class DatabaseSeeder extends Seeder
             ReferenceSeeder::class,
             SiteSectionSeeder::class,
             TranslationSeeder::class,
+            CertificationSeeder::class,
         ]);
 
 

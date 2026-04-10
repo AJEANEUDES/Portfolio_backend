@@ -18,6 +18,7 @@ class TranslationSeeder extends Seeder
             ['key' => 'header.blog',         'group' => 'header', 'fr' => 'Blog',        'en' => 'Blog',        'es' => 'Blog'],
             ['key' => 'header.publications', 'group' => 'header', 'fr' => 'Publications','en' => 'Publications','es' => 'Publicaciones'],
             ['key' => 'header.references',   'group' => 'header', 'fr' => 'Références',  'en' => 'References',  'es' => 'Referencias'],
+            ['key' => 'header.certifications', 'group' => 'header', 'fr' => 'Certifications', 'en' => 'Certifications', 'es' => 'Certificaciones'],
             ['key' => 'header.contact',      'group' => 'header', 'fr' => 'Contact',     'en' => 'Contact',     'es' => 'Contacto'],
             ['key' => 'header.cv',           'group' => 'header', 'fr' => 'CV',          'en' => 'CV',          'es' => 'CV'],
 
@@ -86,6 +87,30 @@ class TranslationSeeder extends Seeder
             ['key' => 'references.letter_pending',    'group' => 'references', 'fr' => 'En attente',        'en' => 'Pending',          'es' => 'Pendiente'],
             ['key' => 'references.letter_on_request', 'group' => 'references', 'fr' => 'Sur demande',       'en' => 'On request',       'es' => 'A petición'],
             ['key' => 'references.letter_pdf',        'group' => 'references', 'fr' => 'Lettre PDF',        'en' => 'PDF Letter',       'es' => 'Carta PDF'],
+
+            // === FILTRES CERTIFICATIONS ===
+['key' => 'cert_filters.all',          'group' => 'filters', 'fr' => 'Toutes',         'en' => 'All',             'es' => 'Todas'],
+['key' => 'cert_filters.valid',        'group' => 'filters', 'fr' => 'En cours',       'en' => 'Valid',           'es' => 'Vigentes'],
+['key' => 'cert_filters.expired',      'group' => 'filters', 'fr' => 'Expirées',       'en' => 'Expired',         'es' => 'Expiradas'],
+['key' => 'cert_filters.cloud',        'group' => 'filters', 'fr' => 'Cloud',          'en' => 'Cloud',           'es' => 'Cloud'],
+['key' => 'cert_filters.development',  'group' => 'filters', 'fr' => 'Développement',  'en' => 'Development',     'es' => 'Desarrollo'],
+['key' => 'cert_filters.data_science', 'group' => 'filters', 'fr' => 'Data Science',   'en' => 'Data Science',    'es' => 'Data Science'],
+['key' => 'cert_filters.devops',       'group' => 'filters', 'fr' => 'DevOps',         'en' => 'DevOps',          'es' => 'DevOps'],
+['key' => 'cert_filters.security',     'group' => 'filters', 'fr' => 'Sécurité',       'en' => 'Security',        'es' => 'Seguridad'],
+['key' => 'cert_filters.ai_ml',        'group' => 'filters', 'fr' => 'IA & ML',        'en' => 'AI & ML',         'es' => 'IA & ML'],
+
+// === LABELS CERTIFICATIONS ===
+['key' => 'certifications.issued',        'group' => 'certifications', 'fr' => 'Obtenue en',           'en' => 'Issued',          'es' => 'Obtenida en'],
+['key' => 'certifications.expires',       'group' => 'certifications', 'fr' => 'Expire en',            'en' => 'Expires',         'es' => 'Expira en'],
+['key' => 'certifications.no_expiration', 'group' => 'certifications', 'fr' => 'Sans expiration',      'en' => 'No expiration',   'es' => 'Sin expiración'],
+['key' => 'certifications.verify',        'group' => 'certifications', 'fr' => 'Vérifier',             'en' => 'Verify',          'es' => 'Verificar'],
+['key' => 'certifications.credential_id', 'group' => 'certifications', 'fr' => 'ID',                   'en' => 'ID',              'es' => 'ID'],
+['key' => 'certifications.expired',       'group' => 'certifications', 'fr' => 'Expirée',              'en' => 'Expired',         'es' => 'Expirada'],
+['key' => 'certifications.featured',      'group' => 'certifications', 'fr' => 'Mis en avant',         'en' => 'Featured',        'es' => 'Destacada'],
+['key' => 'certifications.skills',        'group' => 'certifications', 'fr' => 'Compétences validées', 'en' => 'Validated skills','es' => 'Habilidades validadas'],
+['key' => 'certifications.empty',         'group' => 'certifications', 'fr' => 'Aucune certification dans cette catégorie.', 'en' => 'No certification in this category.', 'es' => 'Ninguna certificación en esta categoría.'],
+
+
         ];
 
         foreach ($translations as $t) {
